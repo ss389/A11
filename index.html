@@ -3,38 +3,49 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>San Joaquin Valley Town Hall</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="styles/c7_main.css">
+	<link rel="stylesheet" href="styles/c8_main.css">
 	<link rel="stylesheet" href="styles/slicknav.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    $('#nav_menu ul').slicknav({prependTo:"#nav_menu"});
+});
+<body>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
         });
     </script>
 </head>
 
-<body>
 	<header>
 		<img src="images/town_hall_logo.gif" alt="Town Hall logo" height="80">
 		<h2>San Joaquin Valley Town Hall</h2>
 		<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
 	</header>
+
 	<nav id="mobile_menu"></nav>
 	<nav id="nav_menu">
 		<ul>
-			<li><a href="index.html" class="current">Home</a></li>
-			<li><a href="speakers/c6_sampson.html">Speakers</a></li>
-			<li><a href="pages/luncheons.html">Luncheons</a></li>
-			<li><a href="pages/tickets.html">Tickets</a></li>
-			<li><a href="pages/aboutus.html">About Us</a>
+			<li><a class="current" href="index.html">Home</a></li>
+			<li><a href="#">Speakers</a></li>
+			<li><a href="#">Luncheons</a></li>
+			<li><a href="#">Tickets</a></li>
+			<li><a href="#">About Us</a>
 				<ul>
-					<li><a href="pages/ourhistory.html">Our History</a></li>
-					<li><a href="pages/boardofdirectors.html">Board of Directors</a></li>
-					<li><a href="pages/pastspeakers.html">Past Speakers</a></li>
-					<li><a href="pages/contactinformation.html">Contact Information</a></li>
+					<li><a href="#">Our History</a></li>
+					<li><a href="#">Board of Directors</a></li>
+					<li><a href="#">Past Speakers</a></li>
+					<li><a href="#">Contact Information</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -59,11 +70,11 @@
 				Curator at the Utah Museum of Natural History, steps to the podium. Sampson's research 
 				has focused on the ecology and evolution of late Cretaceous dinosaurs and he has conducted 
 				fieldwork in a number of countries in Africa.</p>
-				<p><a href="speakers/c6_sampson.html">Read more.</a>&nbsp;<b><a href="media/sampson.mp4" target="_blank">Or play video.</a></b></p>
+				<p><a href="speakers/c6_sampson.html">Read more.</a>&nbsp;<b><a href="media/sampson.mp4" target="_blank">Or play video</a></b></p>
 			</article>
 			
 			<h2>Our Ticket Packages</h2>
-			<ul class="bottomlist">
+			<ul>
 				<li>Season Package: $95</li>
 				<li>Patron Package: $200</li>
 				<li>Single Speaker: $25</li>
@@ -72,18 +83,20 @@
 		
 		<aside>
 			<h2>Guest speakers</h2>
-			<h3>October<br><a href="speakers/brancaccio.html">David Brancaccio</a></h3>
-			<img src="images/brancaccio75.jpg" alt="David Brancaccio photo">
-			<h3>November<br><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
-			<img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
-			<h3>January<br><a href="speakers/chua.html">Amy Chua</a></h3>
-			<img src="images/chua75.jpg" alt="Amy Chua photo">
-			<h3>February<br><a href="speakers/c6_sampson.html">Scott Sampson</a></h3>
-			<img src="images/sampson75.jpg" alt="Scott Sampson photo">
+			<div>
+				<h3>October<br><a href="speakers/brancaccio.html">David Brancaccio</a></h3>
+				<img src="images/brancaccio75.jpg" alt="David Brancaccio photo">
+				<h3>November<br><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+				<img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
+				<h3>January<br><a href="speakers/chua.html">Amy Chua</a></h3>
+				<img src="images/chua75.jpg" alt="Amy Chua photo">
+				<h3>February<br><a href="speakers/c6_sampson.html">Scott Sampson</a></h3>
+				<img src="images/sampson75.jpg" alt="Scott Sampson photo">
+			</div>
 		</aside>
 	</main>
 	<footer>
-		<p>&copy; Suvil Sinha, A11 Due: April 26<sup>th</sup></p>
+	<p>&copy; Suvil Sinha, A11 Due: April 9<sup>th</sup></p>
 	</footer>
 </body>
 </html>
